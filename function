@@ -14,14 +14,14 @@ public class fun {
     }
 
     public void swap(int a, int b) {
-        System.out.println("--- Before Swapping ---");
+        System.out.println("------- Before Swapping --------");
         System.out.println("a = " + a + ", b = " + b);
 
         int temp = a;
         a = b;
         b = temp;
 
-        System.out.println("--- After Swapping ---");
+        System.out.println("------- After Swapping -------");
         System.out.println("a = " + a + ", b = " + b);
         System.out.println("----------------------------------");
     }
@@ -33,7 +33,9 @@ public class fun {
             reversed = reversed * 10 + digit;
             num /= 10;
         }
+System.out.println("----------------------------------");
         return reversed;
+
     }
 
     public void Palindrome(int num) {
@@ -59,10 +61,13 @@ public class fun {
         int b = sc.nextInt();
 
         f.arithmeticOperations(a, b);
+        System.out.println("----------------------------------");
         f.swap(a, b);
+        System.out.println("----------------------------------");
 
         System.out.print("Enter a number to reverse and check palindrome: ");
         int number = sc.nextInt();
+        System.out.println("----------------------------------");
 
         int reversed = f.reverse(number);
         System.out.println("Reversed Number: " + reversed);
